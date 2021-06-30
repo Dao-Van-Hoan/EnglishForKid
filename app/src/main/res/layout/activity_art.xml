@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5F2FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_home"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TB_ArtActivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Back" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="#FDFCFC" />
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/but" />
+
+        <Button
+            android:id="@+id/btdo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#FF1744"/>
+
+        <Button
+            android:id="@+id/btden"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/btluc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00E676"/>
+
+        <Button
+            android:id="@+id/btlam"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00B0FF"/>
+
+        <Button
+            android:id="@+id/btvang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#FFEA00"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/but" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/btxoa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/tay" />
+
+</LinearLayout>

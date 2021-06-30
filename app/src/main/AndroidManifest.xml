@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.englishforkids">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Game.PaintActivity"></activity>
+        <activity android:name=".Game.ArtActivity" />
+        <activity android:name=".Learn.Activity.Animal_Detail_Activity" />
+        <activity android:name=".Learn.Activity.Number_Detail_Activity" />
+        <activity android:name=".Learn.Activity.Color_Detail_Activity" />
+        <activity android:name=".Learn.Activity.Alphabet_Detail_Activity" />
+        <activity android:name=".Learn.Activity.QuizActivity" />
+        <activity android:name=".Learn.Activity.TestActivity" />
+        <activity android:name=".Learn.Activity.AnimalActivity" />
+        <activity android:name=".Learn.Activity.ColorActivity" />
+        <activity android:name=".Learn.Activity.NumberActivity" />
+        <activity android:name=".Learn.Activity.AlphabetActivity" />
+        <activity android:name=".Video.VideoActivity" />
+        <activity android:name=".Music.MusicActivity" />
+        <activity android:name=".Game.GameActivity" />
+        <activity android:name=".Learn.LearnActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

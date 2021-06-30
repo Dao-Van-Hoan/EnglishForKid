@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Learn.Activity.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/LLlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_home"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TB_QuizActivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Back" />
+
+        <TextView
+            android:id="@+id/tvScoreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:text="60"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="What is this !"
+        android:textColor="#FF7777"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LLlayout" />
+
+    <ImageView
+        android:id="@+id/imvQuiz"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChoose" />
+
+    <TableRow
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imvQuiz">
+
+        <Button
+            android:id="@+id/btAns1q"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btAns2q"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll1">
+        <Button
+            android:id="@+id/btAns3q"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btAns4q"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btResetq"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_reload"
+        app:layout_constraintEnd_toEndOf="@+id/ll2"
+        app:layout_constraintStart_toStartOf="@id/ll2"
+        app:layout_constraintTop_toBottomOf="@id/ll2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Learn.Activity.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/LLlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_home"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/TB_TestActivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Back" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:text="60"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Choose the correct answer !"
+        android:textColor="#FF7777"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LLlayout" />
+
+    <TextView
+        android:id="@+id/tvQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChoose"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Re..."
+        android:textColor="#656565"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuest">
+
+        <Button
+            android:id="@+id/btAns1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btAns2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btAns3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btAns4"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/xanh"
+            android:textAllCaps="false"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#656565"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_reload"
+        app:layout_constraintEnd_toEndOf="@+id/ll1"
+        app:layout_constraintStart_toStartOf="@id/ll1"
+        app:layout_constraintTop_toBottomOf="@id/ll1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
